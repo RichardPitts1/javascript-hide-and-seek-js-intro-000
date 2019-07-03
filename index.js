@@ -15,3 +15,8 @@ function getFirstSelector(selector){
     rankHigher[i].innerHTML = ((parseInt(rankHigher[i].innerHTML)) + n)
   }
  }
+
+function deepestChild() {
+  var deep = document.getElementById('grand-node').querySelectorAll('div')
+  return deep[deep.length - 1]
+}
